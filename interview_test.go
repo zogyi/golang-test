@@ -6,7 +6,7 @@ import (
 )
 
 //Difficulty: easy
-//Time Taken: 5m
+//Estimate Effort: 5m
 //Time Taken: 5m
 func TestTestValidity (t *testing.T) {
 	result := testValidity(`1-abc-2-efg-3-hij-4-klm`)
@@ -26,7 +26,7 @@ func TestTestValidity (t *testing.T) {
 }
 
 //Difficulty: easy
-//Time Taken: 2m
+//Estimate Effort: 2m
 //Time Taken: 2m
 func TestWholeStory (t *testing.T) {
 	result := wholeStory(`1-abc-2-efg-3-hij-4-klm`)
@@ -36,7 +36,7 @@ func TestWholeStory (t *testing.T) {
 }
 
 //Difficulty: easy
-//Time Taken: 2m
+//Estimate Effort: 2m
 //Time Taken: 2m
 func TestAverageNumber (t *testing.T) {
 	result := averageNumber(`1-abc-2-efg-3-hij-4-klm`)
@@ -45,6 +45,9 @@ func TestAverageNumber (t *testing.T) {
 	}
 }
 
+//Difficulty: easy
+//Estimate Effort: 2m
+//Time Taken: 2m
 func TestStoryStats (t *testing.T) {
 	shortestArr, longestArr, averageLen, averageStrings := storyStats(`1-abc-2-efgh-3-ijklm-4-nopqrst`)
 

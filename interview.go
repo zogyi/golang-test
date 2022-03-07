@@ -7,7 +7,7 @@ import (
 )
 
 //Difficulty: easy
-//Time Taken: 10m
+//Estimate Effort: 10m
 //Time Taken: 15m
 func testValidity(myString string) bool {
 	strArray := strings.Split(myString, `-`)
@@ -19,6 +19,8 @@ func testValidity(myString string) bool {
 		 if crtNumber, err := strconv.Atoi(strArray[i]); err == nil {
 		 	if startNumber >= crtNumber {
 				return false
+			} else {
+				startNumber = crtNumber
 			}
 		 } else {
 		 	return false
@@ -31,7 +33,7 @@ func testValidity(myString string) bool {
 }
 
 //Difficulty: easy
-//Time Taken: 2m
+//Estimate Effort: 2m
 //Time Taken: 2m
 //supposed the string has validated, don't check it again
 //not clear about the precision, return the int instead
@@ -46,7 +48,7 @@ func averageNumber(myString string) int {
 }
 
 //Difficulty: easy
-//Time Taken: 2m
+//Estimate Effort: 2m
 //Time Taken: 2m
 //supposed the string has validated, don't check it again
 func wholeStory(myString string) string {
@@ -62,7 +64,7 @@ func wholeStory(myString string) string {
 }
 
 //Difficulty: easy
-//Time Taken: 8m
+//Estimate Effort: 8m
 //Time Taken: 25m
 //supposed the string has validated, don't check it again
 func storyStats (myString string) (shortestArray []string, longestArray []string, averageLen int, averageLenString []string){
